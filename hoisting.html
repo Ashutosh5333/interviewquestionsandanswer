@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>What is Hoisting</h1>
+    <h2>
+      Hoisting is a JavaScript mechanism where variables, function declarations
+      and classes are moved to the top of their scope before code execution.
+      Remember that JavaScript only hoists declarations, not initialisation.
+      Let's take a simple example of variable hoisting,
+    </h2>
+
+    <p> Hoisting is Phenonen is javascript by which you can access these variables 
+        in functions Even before you can initialized it  you have put some value in it 
+         I can access it without any error ;     
+    </p>
+  </body>
+</html>
+<script>
+//   console.log(message); //output : undefined
+//   var message = "The variable Has been hoisted";
+//   var message;
+//   console.log(message);
+//   message = "The variable Has been hoisted";
+
+//   message("Good morning"); //Good morning
+
+//   function message(name) {
+//     console.log(name);
+//   }
+
+   
+ /** *****/
+
+    //   var x= 7 
+    // function getnam(){
+    //     console.log("Hello ashutosh ")
+    // }
+    // getnam()
+    // console.log(x)
+
+
+//    this is hoisting  and its only can do in var 
+    getnam()
+    console.log(x)
+       var x= 7 
+    function getnam(){
+        console.log("Hello ashutosh ")
+    }
+    
+    
+    
+
+</script>

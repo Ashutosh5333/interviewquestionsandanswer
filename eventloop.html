@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> What is an event loop</h1>
+    <p>The event loop is a process that continuously monitors both the call stack and the event queue and checks whether or not the call stack is empty. If the call stack is empty and there are pending events in the event queue, the event loop dequeues the event from the event queue and pushes it to the call stack. The call stack executes the event, and any additional events generated during the execution are added to the end of the event queue.
+
+        Note: The event loop allows Node.js to perform non-blocking I/O operations, even though JavaScript is single-threaded, by offloading operations to the system kernel whenever possible. Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background.</p>
+
+     <p> Event loop in simpple words <span>
+        When your code runs, some tasks take time to finish, like fetching data from a server or reading a file. Instead of waiting for these tasks to finish before moving on to the next ones, the event loop helps manage this by allowing the program to keep doing other things while waiting for these tasks to complete.
+
+So, the event loop keeps an eye on the tasks in your code and ensures that everything runs smoothly without blocking the execution of other tasks. It maintains the order and timing of tasks, making sure that when one task finishes, it moves to the next one waiting in line. This way, your JavaScript code can handle multiple operations efficiently without getting stuck.
+     </span> </p>   
+</body>
+</html>
